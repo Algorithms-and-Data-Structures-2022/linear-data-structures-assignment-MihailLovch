@@ -24,7 +24,9 @@ namespace assignment {
     if (IsEmpty()){
       return false;
     }else {
-      front_ = front_->next;
+      Node* node = front_;
+      delete front_;
+      front_ = node->next;
     }
     size_ --;
   }
