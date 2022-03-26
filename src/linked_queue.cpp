@@ -28,12 +28,11 @@ namespace assignment {
         front_ = nullptr;
         back_ = nullptr;
       } else {
-        Node* node = front_;
-        delete front_;
-        front_ = node->next;
+        front_ = front_->next;
       }
+      size_ --;
+      return true;
     }
-    size_ --;
   }
 
   void LinkedQueue::Clear() {
