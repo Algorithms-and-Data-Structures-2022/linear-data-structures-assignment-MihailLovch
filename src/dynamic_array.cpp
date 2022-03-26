@@ -48,7 +48,7 @@ namespace assignment {
         data2[i] = data_[i];
       }
       data2[index] = value;
-      for (int i = index + 1;i < capacity_;i++){
+      for (int i = index + 1;i < size()+1;i++){
         data2[i] = data_[i-1];
       }
       data_ = data2;

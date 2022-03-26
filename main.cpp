@@ -11,8 +11,8 @@ int main(int argc, char **argv) {
 
   // Пример. Создание пустого динамического массива.
   assignment::DynamicArray array;
-
-  cout << "Write your code here...\n";
+  array.Add(2);
+  cout << array.Contains(2);
 
   return 0;
 }
